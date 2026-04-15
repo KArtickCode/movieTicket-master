@@ -41,8 +41,9 @@ Repository Layer
 Database (MySQL)
 
 Service Layer → Kafka → Notification Consumer → Email Service
+```
 
-📁 Project Structure
+## 📁 Project Structure
 
 MovieShark
 │

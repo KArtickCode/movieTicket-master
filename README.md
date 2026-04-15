@@ -44,19 +44,18 @@ Service Layer → Kafka → Notification Consumer → Email Service
 ```
 
 ## 📁 Project Structure
-```text
+
 MovieShark
 │
-├── config          (Kafka, Mail, Security)
-├── controller      (REST APIs)
-├── service         (Business Logic)
-├── repository      (DB Access)
-├── domain          (Entities)
-├── resource        (DTOs)
-├── consumer        (Kafka Listener)
-├── enums           (Constants)
-├── exception       (Error Handling)
-```
+├── ⚙️ config         → Kafka, Mail, Security Configurations
+├── 🎮 controller     → REST API Endpoints
+├── ⚙️ service        → Business Logic Layer
+├── 🗄 repository     → Database Access Layer (JPA)
+├── 🧩 domain         → Entity Classes (DB Models)
+├── 📦 resource       → DTO / Request-Response Models
+├── 📡 consumer       → Kafka Listeners (Event Handling)
+├── 📌 enums          → Constant Enums (Role, Genre, etc.)
+├── ❌ exception      → Global Exception Handling
 
 ## ✨ Features
 ### 👤 User Management

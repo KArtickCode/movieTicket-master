@@ -44,7 +44,7 @@ Service Layer → Kafka → Notification Consumer → Email Service
 ```
 
 ## 📁 Project Structure
-
+```text
 MovieShark
 │
 ├── config          (Kafka, Mail, Security)
@@ -56,30 +56,32 @@ MovieShark
 ├── consumer        (Kafka Listener)
 ├── enums           (Constants)
 ├── exception       (Error Handling)
+```
 
-✨ Features
-👤 User Management
-Signup user
-Fetch user details
-🎬 Movie Management
-Add movies
-Search movies
-🎞 Show Management
-Add shows
-Search shows by city/movie/theater
-🏢 Theater Management
-Add theaters
-Get theater details
-🎟 Ticket System
-Book tickets
-Fetch ticket details
-⭐ Review System
-Add reviews
-Fetch reviews
-🔔 Notification System (Kafka)
-Ticket booking event triggers Kafka
-Consumer sends email notification
-📡 API Endpoints
+## ✨ Features
+### 👤 User Management
+- Signup user
+- Fetch user details
+### 🎬 Movie Management
+- Add movies
+- Search movies
+### 🎞 Show Management
+- Add shows
+- Search shows by city/movie/theater
+### 🏢 Theater Management
+- Add theaters
+- Get theater details
+### 🎟 Ticket System
+- Book tickets
+- Fetch ticket details
+### ⭐ Review System
+- Add reviews
+- Fetch reviews
+### 🔔 Notification System (Kafka)
+- Ticket booking event triggers Kafka
+- Consumer sends email notification
+  
+  ##📡 API Endpoints
 👤 User APIs
 
 POST /user/signup

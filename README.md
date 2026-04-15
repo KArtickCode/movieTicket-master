@@ -44,7 +44,7 @@ Service Layer → Kafka → Notification Consumer → Email Service
 ```
 
 ## 📁 Project Structure
-
+```text
 MovieShark
 │
 ├── ⚙️ config         → Kafka, Mail, Security Configurations
@@ -56,6 +56,7 @@ MovieShark
 ├── 📡 consumer       → Kafka Listeners (Event Handling)
 ├── 📌 enums          → Constant Enums (Role, Genre, etc.)
 ├── ❌ exception      → Global Exception Handling
+```
 
 ## ✨ Features
 ### 👤 User Management

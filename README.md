@@ -81,77 +81,83 @@ MovieShark
 - Ticket booking event triggers Kafka
 - Consumer sends email notification
   
-  ##📡 API Endpoints
-👤 User APIs
+  ## 📡 API Endpoints
 
-POST /user/signup
-GET  /user/{id}
+### 👤 User APIs
+- POST /user/signup
+- GET  /user/{id}
 
-🎬 Movie APIs
+---
 
-POST /movie/add
-GET  /movie/{id}
-GET  /movie/title?title=Avengers
+### 🎬 Movie APIs
+- POST /movie/add
+- GET  /movie/{id}
+- GET  /movie/title?title=Avengers
 
-⭐ Review APIs
-POST /review/add
-GET  /review/find?reviewId=1
-🎞 Show APIs
-POST /show/add
-GET  /show/search?city=&movieName=&theaterName=
-🏢 Theater APIs
-POST /theater/add
-GET  /theater/{id}
-🎟 Ticket APIs
-POST /ticket/book
-GET  /ticket/{id}
-🔄 Kafka Flow
-User books ticket
-      ↓
-TicketService
-      ↓
-Kafka Topic: TICKET_BOOKED
-      ↓
-NotificationConsumer
-      ↓
-NotificationService
-      ↓
-Email sent to user 📧
-📧 Email Notification
-Uses Gmail SMTP
-Sends booking confirmation email
-Secure TLS connection enabled
-🧠 System Design Concepts
-Layered Architecture
-DTO Pattern (Resource Layer)
-Event-Driven Architecture
-Loose Coupling using Kafka
-Scalable backend design
-⚙️ How to Run
+---
+
+### ⭐ Review APIs
+- POST /review/add
+- GET  /review/find?reviewId=1
+
+---
+
+### 🎞 Show APIs
+- POST /show/add
+- GET  /show/search?city=&movieName=&theaterName=
+
+---
+
+### 🏢 Theater APIs
+- POST /theater/add
+- GET  /theater/{id}
+
+---
+
+### 🎟 Ticket APIs
+- POST /ticket/book
+- GET  /ticket/{id}
+
+---
+
+## 🔄 Kafka Flow
+```text
+User books ticket  
+↓  
+TicketService  
+↓  
+Kafka Topic: `TICKET_BOOKED`  
+↓  
+NotificationConsumer  
+↓  
+NotificationService  
+↓  
+Email sent to user 📧  
+```
+---
+
+## 📧 Email Notification
+
+- Uses Gmail SMTP  
+- Sends booking confirmation email  
+- Secure TLS connection enabled  
+
+---
+
+## 🧠 System Design Concepts
+
+- Layered Architecture  
+- DTO Pattern (Resource Layer)  
+- Event-Driven Architecture  
+- Loose Coupling using Kafka  
+- Scalable backend design  
+
+---
+
+## ⚙️ How to Run
+
+```bash id="runx1"
 git clone <repo-url>
 cd MovieShark
 mvn clean install
 mvn spring-boot:run
-🧪 Requirements
-Java 17+
-MySQL
-Kafka (localhost:9092)
-Maven
-🚀 Future Improvements
-JWT Authentication
-Payment Gateway Integration
-Seat Locking System
-Microservices decomposition
-Docker Deployment
-👨‍💻 Author
-
-Kartick Sau
-💻 Java Backend Developer
-🔗 GitHub: KArtickCode
-🔗 LinkedIn: Kartick Sau
-
-⭐ Support
-
-If you like this project:
-⭐ Star the repo
-🍴 Fork it
